@@ -1,0 +1,38 @@
+@mixin text-light() {
+  font-weight: 300;
+}
+
+@mixin text-regular() {
+  font-weight: 400;
+}
+
+@mixin text-medium() {
+  font-weight: 500;
+}
+
+@mixin text-semibold() {
+  font-weight: 600;
+}
+
+@mixin text-bold() {
+  font-weight: 700;
+}
+
+@mixin text-extrabold() {
+  font-weight: 800;
+}
+
+@mixin text-black() {
+  font-weight: 900;
+}
+
+/**
+* BOXES
+*/
+@mixin standardBoxShadow() {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+@mixin standardFilterShadow() {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}

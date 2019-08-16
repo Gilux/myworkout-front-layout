@@ -1,0 +1,76 @@
+@import "../mixins";
+
+.performances-table {
+  width: 100%;
+}
+
+.performance {
+  width: 100%;
+  height: 40px;
+  background-color: #F3F3F3;
+
+  margin-bottom: 5px;
+  padding: 0 15px;
+
+  
+
+  font-size: 1.4rem;
+  @include text-medium();
+}
+
+.performance label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.performance__form-control {
+  input[type="number"], .checkbox {
+    background-color: #fff;
+    width: 48px;
+    height: 24px;
+
+    border-radius: 20px;
+
+    position: relative;
+  }
+
+
+  .checkbox {
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .cursor {
+      background-color: $lightGrey;
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+
+      position: absolute;
+      top: 3px;
+      left: 5px;
+
+      transition: background-color 0.3s ease-out,
+        left 0.3s ease-out,
+    }
+
+    input[type="checkbox"]:checked + .cursor {
+      background-color: $yellow;
+      justify-self: flex-end;
+      left: 25px;
+    }
+  }
+
+  input[type="number"] {
+    width: 48px;
+    height: 24px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    @include text-bold();
+  }
+}

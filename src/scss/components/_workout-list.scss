@@ -1,0 +1,97 @@
+@import "../mixins";
+
+.card {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-header {
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.card-body {
+  padding: 10px 10px 20px 10px;
+}
+
+.workout-list {
+  width: 100%;
+  overflow: scroll;
+
+  padding: 10px 0;
+}
+
+.workout-list-inner {
+  display: flex;
+  width: 220%;
+  flex-flow: row nowrap;
+
+  .workout-card {
+    margin-right: 20px;
+  }
+}
+
+.workout-card {
+  width: 180px;
+  position: relative;
+
+  .card-header .workout-card__start {
+    position: absolute;
+    bottom: -12px;
+    right: 10px;
+
+    width: 24px;
+    height: 24px;
+
+    @include standardFilterShadow();
+  }
+
+  .card-body {
+    padding-top: 17px;
+  }
+}
+
+.workout-card__title {
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    
+    margin-bottom: 2rem;
+    
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: $lightGrey;
+  }
+}
+
+.workout-card__details {
+  list-style-type: none;
+  color: $lightGrey;
+
+  li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 5px;
+
+    text-transform: uppercase;
+    @include text-bold();
+
+    img {
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <title>Session</title>
+</head>
+
+<body class="no-overflow">
+  <div id="main-container" class="single-session">
+    <div class="single-session__header">
+      <header>
+        <div class="flex-1 d-flex-row align-center">
+          <a href="#" class="avatar">
+            <img src="./img/avatar.png" class="" alt="avatar">
+          </a>
+        </div>
+        <a href="dashboard.html">
+          <img src="./img/logo.png" class="logo" alt="Logo">
+        </a>
+        <span class="flex-1"></span>
+      </header>
+      <div class="single-session__image">
+        <img src="./img/workout_1.png" alt="back">
+      </div>
+      <div class="single-session__gradient">
+      </div>
+    </div>
+
+    <main class="single-session__content session-details">
+      <header class="session-details__title is-running">
+        <div class="d-flex-row jc-between">
+          <h2>7mn Workout</h2>
+          <span class="text-yellow weight-bold">
+            00:00
+          </span>
+        </div>
+        <progress max="100" value="100"></progress>
+      </header>
+      <div class="session-details__current is-finished">
+        <div class="text-center">
+          <p class="fs-20 weight-bold uppercase mb-10">Congrats!</p>
+          <p>You completed the session!</p>
+        </div>
+        <img src="img/icons/finish.svg" alt="finished">
+      </div>
+
+    </main>
+
+    <div class="single-session__start">
+      <a href="#" class="btn btn-yellow mt-20">Review and save performance</a>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("hashchange", () => {
+        let hash = window.location.hash
+        document.querySelector("#login-block").className = hash.slice(1)
+        document.querySelector("div.login-page").classList.add(hash.slice(1))
+      })
+    })
+  </script>
+</body>
+
+</html>

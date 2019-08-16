@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <title>Session</title>
+</head>
+
+<body class="no-overflow">
+  <div id="main-container" class="single-session">
+    <div class="single-session__header">
+      <header>
+        <div class="flex-1 d-flex-row align-center">
+          <a href="#" class="avatar">
+            <img src="./img/avatar.png" class="" alt="avatar">
+          </a>
+        </div>
+        <a href="dashboard.html">
+          <img src="./img/logo.png" class="logo" alt="Logo">
+        </a>
+        <span class="flex-1"></span>
+      </header>
+      <div class="single-session__image">
+        <img src="./img/workout_1.png" alt="back">
+      </div>
+      <div class="single-session__gradient">
+      </div>
+    </div>
+
+    <main class="single-session__content session-details">
+      <header class="session-details__title">
+        <h2>7mn Workout</h2>
+      </header>
+      <p class="mb-20">
+        One of the most famous home workout sessions is now live on MyWorkout! Various exercices to train your whole
+        body!
+      </p>
+      <ul class="session-details__characteristics mb-30">
+        <li class="list-icon-item">
+          <div class="icon-container">
+            <img src="./img/icons/difficulty-black.svg" alt="difficulty">
+          </div>
+          Medium
+        </li>
+        <li class="list-icon-item">
+          <div class="icon-container">
+            <img src="./img/icons/time.svg" alt="time">
+          </div>
+          7'00"
+        </li>
+        <li class="list-icon-item">
+          <div class="icon-container">
+            <img src="./img/icons/reward.svg" alt="reward">
+          </div>
+          9 points
+        </li>
+      </ul>
+      <div class="session-details__list">
+        <p class="text-bold mb-10">Contents:</p>
+        <ul>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/wallsit.svg" alt="wallsit">
+              </div>
+              <p>
+                Wall sit
+              </p>
+            </div>
+            <p>0'30"</p>
+          </li>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/break.svg" alt="break">
+              </div>
+              <p>
+                Break
+              </p>
+            </div>
+            <p>0'10"</p>
+          </li>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/wallsit.svg" alt="wallsit">
+              </div>
+              <p>
+                Wall sit
+              </p>
+            </div>
+            <p>0'30"</p>
+          </li>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/wallsit.svg" alt="wallsit">
+              </div>
+              <p>
+                Wall sit
+              </p>
+            </div>
+            <p>0'30"</p>
+          </li>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/wallsit.svg" alt="wallsit">
+              </div>
+              <p>
+                Wall sit
+              </p>
+            </div>
+            <p>0'30"</p>
+          </li>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/wallsit.svg" alt="wallsit">
+              </div>
+              <p>
+                Wall sit
+              </p>
+            </div>
+            <p>0'30"</p>
+          </li>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/wallsit.svg" alt="wallsit">
+              </div>
+              <p>
+                Wall sit
+              </p>
+            </div>
+            <p>0'30"</p>
+          </li>
+          <li class="list-icon-item">
+            <div>
+              <div class="icon-container">
+                <img src="./img/icons/exercises/wallsit.svg" alt="wallsit">
+              </div>
+              <p>
+                Wall sit
+              </p>
+            </div>
+            <p>0'30"</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="single-session__start">
+      <a href="#" class="btn btn-yellow mt-20">Start session</a>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("hashchange", () => {
+        let hash = window.location.hash
+        document.querySelector("#login-block").className = hash.slice(1)
+        document.querySelector("div.login-page").classList.add(hash.slice(1))
+      })
+    })
+  </script>
+</body>
+
+</html>

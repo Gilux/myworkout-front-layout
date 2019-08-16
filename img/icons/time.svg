@@ -1,0 +1,6 @@
+<svg id="clock-circular-outline" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <g id="Groupe_17" data-name="Groupe 17">
+    <path id="Tracé_5" data-name="Tracé 5" d="M5,0a5,5,0,1,0,5,5A5.006,5.006,0,0,0,5,0ZM5,8.936A3.936,3.936,0,1,1,8.936,5,3.941,3.941,0,0,1,5,8.936Z" fill="#aeaeae"/>
+    <path id="Tracé_6" data-name="Tracé 6" d="M47.136,19.943H44.889v-2.7a.412.412,0,0,0-.823,0v3.113a.412.412,0,0,0,.412.412h2.659a.412.412,0,1,0,0-.823Z" transform="translate(-39.531 -15.098)" fill="#aeaeae"/>
+  </g>
+</svg>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div id="main-container">
+    <div class="sticky-top">
+      <header>
+        <div class="flex-1 d-flex-row align-center">
+          <a href="#" class="avatar">
+            <img src="./img/avatar.png" class="" alt="avatar">
+          </a>
+        </div>
+        <a href="dashboard.html">
+          <img src="./img/logo.png" class="logo" alt="Logo">
+        </a>
+        <span class="flex-1"></span>
+      </header>
+      <div class="status-bar">
+        <p>3 more sessions left for this week. Keep it up!</p>
+        <progress max="100" value="30"></progress>
+      </div>
+    </div>
+    <main>
+      <section>
+
+        <div class="container mb-50">
+          <h2>Hi John!</h2>
+          <p>Select from our hand-picked workout sessions, or create your own.</p>
+          <div class="workout-list">
+            <div class="workout-list-inner">
+              <div class="card workout-card">
+                <div class="card-inner">
+                  <div class="card-header">
+                    <img src="img/workout_1.png" alt="#">
+                    <a href="#" class="workout-card__start">
+                      <img src="img/icons/start_session.svg" alt="#">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <div class="workout-card__title">
+                      <h3>Quick City Run</h3>
+                      <p>Pay a quick visit to your neighbourhood, and feel the fresh air on your face while you work
+                        out!
+                      </p>
+                    </div>
+                    <ul class="workout-card__details">
+                      <li>
+                        <img src="img/icons/difficulty.svg" alt="difficulty"> Easy
+                      </li>
+                      <li>
+                        <img src="img/icons/time.svg" alt="time"> 20'
+                      </li>
+                      <li>
+                        <img src="img/icons/reward.svg" alt="reward"> 15 points
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card workout-card">
+                <div class="card-inner">
+                  <div class="card-header">
+                    <img src="img/workout_1.png" alt="#">
+                    <a href="#" class="workout-card__start">
+                      <img src="img/icons/start_session.svg" alt="#">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <div class="workout-card__title">
+                      <h3>Quick City Run</h3>
+                      <p>Pay a quick visit to your neighbourhood, and feel the fresh air on your face while you work
+                        out!
+                      </p>
+                    </div>
+                    <ul class="workout-card__details">
+                      <li>
+                        <img src="img/icons/difficulty.svg" alt="difficulty"> Easy
+                      </li>
+                      <li>
+                        <img src="img/icons/time.svg" alt="time"> 20'
+                      </li>
+                      <li>
+                        <img src="img/icons/reward.svg" alt="reward"> 15 points
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card workout-card">
+                <div class="card-inner">
+                  <div class="card-header">
+                    <img src="img/workout_1.png" alt="#">
+                    <a href="#" class="workout-card__start">
+                      <img src="img/icons/start_session.svg" alt="#">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <div class="workout-card__title">
+                      <h3>Quick City Run</h3>
+                      <p>Pay a quick visit to your neighbourhood, and feel the fresh air on your face while you work
+                        out!
+                      </p>
+                    </div>
+                    <ul class="workout-card__details">
+                      <li>
+                        <img src="img/icons/difficulty.svg" alt="difficulty"> Easy
+                      </li>
+                      <li>
+                        <img src="img/icons/time.svg" alt="time"> 20'
+                      </li>
+                      <li>
+                        <img src="img/icons/reward.svg" alt="reward"> 15 points
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-yellow mt-20">Create my own session</a>
+        </div>
+      </section>
+      <section>
+
+          <div class="container">
+            <h2>Your achievements</h2>
+            <p>You worked hard, and these well-deserved badges show your dedication to the world.</p>
+            
+            <div class="achievements-list">
+
+            </div>
+          </div>
+        </section>
+    </main>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("hashchange", () => {
+        let hash = window.location.hash
+        document.querySelector("#login-block").className = hash.slice(1)
+        document.querySelector("div.login-page").classList.add(hash.slice(1))
+      })
+    })
+  </script>
+</body>
+
+</html>

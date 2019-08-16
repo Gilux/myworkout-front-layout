@@ -1,0 +1,179 @@
+@import "mixins";
+
+/**
+BUTTONS
+**/
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-text {
+  display: inline;
+}
+
+.btn-cta {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  padding: 15px 0;
+  border-radius: 26px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: $text;
+}
+
+.btn-link {
+  color: $link;
+}
+
+.btn-yellow {
+  width: 100%;
+  background-color: $yellow;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  padding: 15px 0;
+  text-transform: uppercase;
+  @include text-bold();
+  @include standardBoxShadow();
+}
+
+/**
+GRID/CONTAINER
+**/
+.container {
+  padding: 0 15px;
+}
+
+/**
+TYPO
+**/
+.weight-medium {
+  @include text-medium();
+}
+
+.weight-bold {
+  @include text-bold();
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// Font sizes
+$i: 10;
+@while $i < 30 {
+  .fs-#{$i} {
+    font-size: #{$i}px !important;
+  }
+  $i: $i + 2;
+}
+
+/**
+COLOR
+**/
+.text-yellow {
+  color: $yellow;
+}
+
+/**
+MARGINS
+**/
+$i: 1;
+@while $i < 10 {
+  .mt-#{$i*10} {
+    margin-top: 10px*$i !important;
+  }
+  .mb-#{$i*10} {
+    margin-bottom: 10px*$i !important;
+  }
+  $i: $i + 1;
+}
+
+/**
+FLEX
+**/
+.as-start {
+  align-self: flex-start !important;
+}
+
+.as-end {
+  align-self: flex-end !important;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/**
+ALIGN
+**/
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/**
+LISTS
+**/
+.list-icon-item {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 10px;
+
+  // Icon container
+  .icon-container {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+  }
+}

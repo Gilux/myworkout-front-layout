@@ -1,0 +1,40 @@
+@import "mixins";
+
+form {
+  width: 100%;
+  color: $text;
+  font-family: "Raleway";
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.form-group {
+  width: 100%;
+  
+  display: flex;
+  flex-flow: column wrap;
+
+  label {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include text-extrabold();
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $text;
+    font-family: Raleway;
+  }
+
+  input[type='text'], input[type='password'], input[type='email'] {
+    font-size: 1.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+    @include text-regular();
+    color: $text;
+  }
+}

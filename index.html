@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <title>Register/Login</title>
+</head>
+<body class="login-page">
+  <div id="main-container">
+    <header>
+      <a href="index.html">
+        <img src="./img/logo.png" alt="Logo">
+      </a>
+    </header>
+    <div class="login-page ">
+      <div class="login-background-image-parallax"></div>
+      <div id="login-block" class="">
+        <div class="login-block__title">
+          <span class="signup-title">SIGN UP</span>
+          <span class="signin-title">SIGN IN</span>
+        </div>
+        <div class="login-block__wave">
+          <svg xmlns="http://www.w3.org/2000/svg" width="452.372" height="40.409" viewBox="0 0 452.372 40.409">
+            <path id="wave" data-name="wave" d="
+            M-523,489s59-8,105,0,133,12,195,0c60-14,87-11,121,0s24,31,24,31H-529Z" transform="translate(529 -479.591)" fill="#f1db15"/>
+          </svg>        
+        </div>
+        <div class="login-block__main">
+          <div>
+            <p class="intro">Track every workout session for free.</p>
+            <a href="#signup" class="btn btn-cta btn-white mt-10">Sign Up</a>
+          </div>
+          <p>
+            Already have an account? 
+            <a href="#signin" class="btn btn-text btn-link weight-medium">Sign in</a>
+          </p>
+        </div>
+        <!-- <div class="login-block__main">
+          <span class="login-block__link text-right">Already have an account? <a href="#" class="btn-link weight-medium">Sign in</a></span>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email">
+            </div>
+            <div class="form-group mt-30">
+              <label for="username">Username</label>
+              <input type="text" id="username">
+            </div>
+            <div class="form-group mt-30">
+              <label for="password">Password</label>
+              <input type="password" id="password">
+            </div>
+            <a href="#signup" class="btn btn-cta btn-white mt-30">Sign Up</a>
+          </form>
+        </div> -->
+        <!-- <div class="login-block__main">
+          <span class="login-block__link as-start">Need an account? <a href="#" class="btn-link weight-medium">Sign up!</a></span>
+          <form action="#" method="post" class="flex-1">
+            <div class="form-group mt-30">
+              <label for="username">Username</label>
+              <input type="text" id="username">
+            </div>
+            <div class="form-group mt-30">
+              <label for="password">Password</label>
+              <input type="password" id="password">
+            </div>
+            <a href="#signup" class="btn btn-cta btn-white mt-30">Sign Up</a>
+          </form>
+        </div> -->
+      </div>
+    </div>
+  </div>
+    
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("hashchange", () => {
+        let hash = window.location.hash
+        document.querySelector("#login-block").className = hash.slice(1)
+        document.querySelector("div.login-page").classList.add(hash.slice(1))
+      })
+    })
+  </script>
+</body>
+</html>

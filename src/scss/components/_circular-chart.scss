@@ -1,0 +1,58 @@
+.circular-chart-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: none;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+.circular-chart.orange .circle {
+  stroke: $yellow;
+}
+
+.circular-chart__value {
+  font-size: 5rem;
+  @include text-extrabold();
+  line-height: 5rem;
+
+  position: relative;
+  margin-top: -1rem; // random fix for line-height issues
+}
+
+// SMALL VARIANT
+.circular-chart-container.small {
+
+  // width: 100px;
+  height: 100px;
+
+
+  .circle {
+    stroke-width: 1.5;
+  } 
+
+  .circular-chart__value {
+    font-size: 2.8rem;
+  }
+}

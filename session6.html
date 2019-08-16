@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <title>Session</title>
+</head>
+
+<body class="no-overflow">
+  <div id="main-container" class="single-session">
+    <div class="single-session__header">
+      <header>
+        <div class="flex-1 d-flex-row align-center">
+          <a href="#" class="avatar">
+            <img src="./img/avatar.png" class="" alt="avatar">
+          </a>
+        </div>
+        <a href="dashboard.html">
+          <img src="./img/logo.png" class="logo" alt="Logo">
+        </a>
+        <span class="flex-1"></span>
+      </header>
+      <div class="single-session__image">
+        <img src="./img/workout_1.png" alt="back">
+      </div>
+      <div class="single-session__gradient">
+      </div>
+    </div>
+
+    <main class="single-session__content session-details">
+      <header class="session-details__title is-running">
+        <div class="d-flex-row jc-between">
+          <h2>7mn Workout</h2>
+          <span class="text-yellow weight-bold">
+            05:33
+          </span>
+        </div>
+        <progress max="100" value="8"></progress>
+      </header>
+      <div class="session-details__current is-break">
+        <div class="d-flex-row jc-between align-center break-timer">
+          <p class="text-center description flex-1 fs-14">
+            <span class="weight-bold uppercase fs-20">Break</span>
+            <br>
+            Next exercise: <span class="weight-bold uppercase">Squats</span>
+          </p>
+          <div class="circular-chart-container small">
+            <svg viewBox="0 0 36 36" class="circular-chart orange">
+              <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <p class="circular-chart__value">
+              25
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="mb-10 fs-18">How many reps in 30sec?</p>
+          <p class="mb-20">Answer by saying the number!</p>
+          <img src="img/icons/voice-recognition.png" alt="mic">
+          
+        </div>
+      </div>
+
+    </main>
+
+    <div class="single-session__start">
+      <a href="#" class="btn btn-yellow mt-20">Cancel session</a>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("hashchange", () => {
+        let hash = window.location.hash
+        document.querySelector("#login-block").className = hash.slice(1)
+        document.querySelector("div.login-page").classList.add(hash.slice(1))
+      })
+    })
+  </script>
+</body>
+
+</html>
